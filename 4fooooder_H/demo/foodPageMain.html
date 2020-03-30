@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--title 나라 이름에 맞게 바뀌도록 수정-->
+    <title>Hello Korea</title>
+    <link href="foodPageMain_style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Domine|Patua+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="Hello">
+      Hello Korea!
+    </div>
+    <!--배너-->
+    <div class="white-frame">
+        <!-- whiteframe은 relative이다. 안에 absolute오면 종속적-->
+        <div>
+            <p class="imsi-title">Country Name</p>   <!--p태그: 문단나누기-->
+            <a href="#" class='menu'>World Map</a>
+            <br><br>   <!--p태그: 문단나누기-->
+            <a href="#" class='menu'>Ask Anything</a>
+        </div>
+    </div>
+    <!--검색어-->
+    <form>
+      <fieldset>
+        <input type="search"  placeholder="">
+
+        <button type="submit">
+          <i class="fa-search"></i>
+          search
+        </button>
+      </fieldset>
+    </form>
+
+    <div class='loginNregister'>
+      <a href='#'>login /</a>
+      <a href='#'>register</a>
+    </div>
+
+    <!--사진게시판-->
+    <div class="imageZip">
+      <a href=#><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/330px-Dolsot-bibimbap.jpg" class='wikiImage'>
+      <a href=#><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Doenjang_jjigae.jpg/330px-Doenjang_jjigae.jpg" class='wikiImage'>
+      <a href=#><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Tteok.jpg/375px-Tteok.jpg" class='wikiImage'>
+      <a href=#><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Gimchi.jpg/180px-Gimchi.jpg" class='wikiImage'>
+      <a href=#><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Korean_rice_punch-Sikhye-01A.jpg/330px-Korean_rice_punch-Sikhye-01A.jpg" class='wikiImage'>
+    </div>
+
+  </body>
+</html>
+
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<!--
+A fake / hidden checkbox is used as click reciever,
+so you can use the :checked selector on it.
+-->
