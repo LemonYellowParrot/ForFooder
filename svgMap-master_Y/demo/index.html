@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<title>
+<title>
+  <title>svgMap demos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+  <link href="demo.css" rel="stylesheet">
+  <link href="../dist/svgMap.css" rel="stylesheet">
+  <script src="../dist/svgMap.js"></script>
+  <script src="../src/js/menu.js"></script>
+  <script src="../src/js/jquery-3.4.1.js">
+
+  </script>
+  
+</title>
+
+<body>
+<!--
+  <button type="button" name="button" id="menu">
+
+    <span></span>
+  
+    <span></span>
+  
+    <span></span>
+  
+  </button>
+-->
+
+
+<!--
+  <div class="dropdown">
+    <button type="button" onclick="myFunction()" class="dropbtn"><img src="../data/menu.png"></button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+-->
+
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>World Map</li></a>
+      <a href="#"><li>Ask Anything</li></a>
+      <a href="#"><li>About</li></a>
+    </ul>
+  </div>
+</nav>
+
+  <div class="demo-wrapper">
+    <!-- Demo GPD -->
+    <div class="demo-container">
+      
+     
+      <form class='up'>
+        <fieldset class='up'>
+          <input type="search" class='up'  placeholder="검색어를 입력하세요">
+          
+          <button type="submit" class='up'>
+            <i class="fa fa-search up"></i>
+            검색
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+ 
+      <div id="svgMapGPD"></div>
+      <script src="../data/gdp.js"></script>
+      <script>
+        new svgMap({
+          targetElementID: 'svgMapGPD',
+          data: svgMapDataGPD
+        });
+      </script>
+    <h1 class="copyright">www.4fooooder.com</h1>
+
+    </div>
+
+  </div>
+
+</body>
+
+</title>
+
+
+
