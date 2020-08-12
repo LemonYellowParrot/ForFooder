@@ -26,19 +26,44 @@ connection.connect(function(err){
         
         });  
 
-        app.get('/Login', function(req, res){
+        app.get('/search', function(req, res){
             var uri = req.url;
             var query = url.parse(uri,true).query;
-            console.log(query.countryname);
-            var sql = 'select * from food where country = "'+query.countryname+'"';
+            var sql = 'select * from food where country like CONCAT( \'%\',"'+query.countryname+'",\'%\')';
             connection.query(sql, function(err, rows,fields){
-                if(err) console.log(err);
-                console.log('rows', rows);
+                if(err) {
+                    console.log(err)
+                }
+                if( rows == "" || rows == null || rows == undefined || ( rows != null && typeof rows == "object" && !Object.keys(rows).length ) ){
+                    res.write('<html>');
+                    res.write('<body>');
+                    res.write('<button onclick="history.back()">Back</button>')
+                    res.write('<br><br><h1>No data</h1>')
+                    res.write('</body>');
+                    res.write('</html>');
+                    res.end()
+                }
+                else{
+                    var i;
+                    res.write('<html>');
+                    res.write('<body>');
+                    res.write('<button onclick="history.back()">Back</button>')
+                   for(i=0;i<5;i++){
+                    
+                        res.write('<br><br><img src="'+rows[i].photourl+'"/><br>'+'<br>')
+                        res.write('country name: '+rows[i].country+'<br>');
+                        res.write('food name: '+rows[i].food+'<br>');
+                        res.write('food explaination: '+rows[i].foodexplain+'<br>'+'<br>');
+                    
+                }
+                    res.write('</body>');
+                    res.write('</html>');
+                    res.end();
+                }
                // console.log('fields',fields)
             })
         
         })
-
 
 
 var server = app.listen(9999, function(){
