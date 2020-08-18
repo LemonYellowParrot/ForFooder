@@ -5,7 +5,7 @@ svgmap 오픈소스와 위키피디아에서 수집한 데이터를 시각화하
 
 ## 설치
 노드 설치(v12.18.3)
-https://nodejs.org/ko/에서 OS에 맞게 설치한다.
+https://nodejs.org/ko/ 에서 OS에 맞게 설치한다.
 
 npm 설치
 npm은 node package Manager이어서 노드를 설치할 때 같이 설치되지만,
@@ -44,21 +44,18 @@ mysql -V
 
 
 데이터가 있는 나라는 분홍색으로 표시된다. 분홍색 나라 위에 커서를 올리면 해당 나라의 음식 사진이 뜬다.
+![1](https://user-images.githubusercontent.com/48848525/90511931-3d6c2e80-e198-11ea-982f-a8aa17fa4b6b.png)
 
-img1
 데이터가 없는 나라의 경우 나라의 색이 노란색으로 나오며 아래와 같은 화면이 나온다
+![2](https://user-images.githubusercontent.com/48848525/90512850-bf108c00-e199-11ea-8275-2bc558060238.png)
 
-img2
-검색창에 나라이름을 검색하면 해당 나라의 음식에 대한 정보가 담긴 사이트가 나타난다.
+검색창에 나라이름을 검색하면 해당 나라의 음식에 대한 정보가 담긴 사이트가 나타난다. 
+왼쪽 상단의 back버튼을 누르면 이전 화면으로 돌아간다.
+![3](https://user-images.githubusercontent.com/48848525/90512929-dc455a80-e199-11ea-9b43-7ca84810a289.png)
+![4](https://user-images.githubusercontent.com/48848525/90513038-08f97200-e19a-11ea-8229-a0585aaf89c4.png)
 
-img3
-위 사이트에서 back 버튼을 누르면 이전 화면으로 돌아간다.
-
-img4
-검색 결과가 없을 경우에는 아래와 같이 나타난다.
-
-img5
-이 화면에서도 마찬가지로 back 버튼을 누르면 이전 화면으로 돌아간다.
+검색 결과가 없을 경우에는 아래와 같이 나타난다. 마찬가지로 back 버튼을 누르면 이전 화면으로 돌아간다.
+![5](https://user-images.githubusercontent.com/48848525/90513100-1e6e9c00-e19a-11ea-8afd-8bcb1cec3490.png)
 
 # LICENSE
 
