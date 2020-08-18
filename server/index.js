@@ -9,11 +9,11 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 var connection = mysql.createConnection({
-    host:"localhost",
-    port: '3306',
-    user: "root",
-    password:"0000",
-    database:"fooooder"
+    host:"*********",
+    port: '****',
+    user: "****",
+    password:"****",
+    database:"********"
 })
 
 connection.connect(function(err){  
