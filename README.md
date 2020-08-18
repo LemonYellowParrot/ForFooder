@@ -68,8 +68,9 @@ CREATE TABLE `테이블명` (
 ![2](https://user-images.githubusercontent.com/48848525/90512850-bf108c00-e199-11ea-8275-2bc558060238.png)
 
 검색창에 나라이름을 검색하면 해당 나라의 음식에 대한 정보가 담긴 사이트가 나타난다. 
-왼쪽 상단의 back버튼을 누르면 이전 화면으로 돌아간다.
 ![3](https://user-images.githubusercontent.com/48848525/90512929-dc455a80-e199-11ea-9b43-7ca84810a289.png)
+
+왼쪽 상단의 back버튼을 누르면 이전 화면으로 돌아간다.
 ![4](https://user-images.githubusercontent.com/48848525/90513038-08f97200-e19a-11ea-8229-a0585aaf89c4.png)
 
 검색 결과가 없을 경우에는 아래와 같이 나타난다. 마찬가지로 back 버튼을 누르면 이전 화면으로 돌아간다.
