@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>4Fooooder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+  
+  <link href="./demo.css" rel="stylesheet" type="text/css">
+  <link href="./svgMap.css" rel="stylesheet" type="text/css">
+  
+  <script src="./svgMap.js" type="text/javascript"></script>
+  <script src="./menu.js" type="text/javascript"></script>
+  <script src="./jquery-3.4.1.js" type="text/javascript"></script>
+  <!--<script src="/views/functionmodule.js"></script>-->
+</head>
+
+<body>
+
+  <div class="demo-wrapper">
+    <!-- GDP 따온 세계지도-->
+    <div class="demo-container">
+      <!--버튼-->
+      <!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+
+    <span></span>
+    <span></span>
+    <span></span>
+    
+
+    <ul id="menu">
+      <a href="http://localhost:9999/"><li>World Map</li></a>
+      <a href="#"><li>Ask Anything</li></a>
+      <a href="#"><li>About</li></a>
+    </ul>
+  </div>
+</nav>
+      
+      <!--검색어-->
+      <form action="/search" method="GET">
+        <fieldset>
+          <input type="search"  placeholder="검색어를 입력하세요" name='countryname'/>
+          
+          <button type="submit">
+            <i class="fa fa-search"></i>
+            검색
+          </button>
+        </fieldset>
+      </form>
+
+      <div id="svgMapGDP"></div>
+      <script src="./gdp.js" type=text/javascript></script>
+      <script>
+        new svgMap({
+          targetElementID: 'svgMapGDP',
+          data: svgMapDataGPD
+        });
+      </script>
+      </div>
+
+      <div class="copyright">
+        4Fooooder
+      </div>
+
+</body>
+
+</html>
