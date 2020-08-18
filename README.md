@@ -36,6 +36,24 @@ mysql -V
 
 # 사용방법
 
+데이터셋 생성
+
+CREATE TABLE `테이블명` (
+  `No` INT NOT NULL,
+  `continent` VARCHAR(1024) NOT NULL,
+  `short` VARCHAR(1024) NOT NULL,
+  `country` VARCHAR(1024) NOT NULL,
+  `food` VARCHAR(1024) NOT NULL,
+  `foodexplain` VARCHAR(4096) NULL,
+  `photourl` MEDIUMTEXT NULL,
+  `nonwikiurl` VARCHAR(1024) NULL,
+  `etc` VARCHAR(1024) NULL,
+  PRIMARY KEY (`No`));
+  
+  data폴더의 food.csv 파일을 해당 테이블에 import한다.
+
+
+
 터미널에서 index.js가 들어있는 폴더로 이동해 서버를 실행시킨다.
 ```
  node index.js
