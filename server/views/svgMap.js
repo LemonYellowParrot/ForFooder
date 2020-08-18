@@ -934,7 +934,7 @@
    * @param  {Float} scale
    * @param  {Boolean} absolute Marks zoom scale as relative or absolute
    */
-  SvgPanZoom.prototype.zoom = function(scale, absolute) {
+  SvgPanZoom.prototype.zoom = function(scale, absolute) {d
     this.zoomAtPoint(
       scale,
       SvgUtils.getSvgCenterPoint(this.svg, this.width, this.height),
@@ -2289,7 +2289,7 @@
   
       // my code
       foodType: 'image',
-      foodURL: 'https://cdn.jsdelivr.net/gh/LemonYellowParrot/4Fooooder/foodimg/{0}.jpg',//'https://cdn.jsdelivr.net/gh/LeeYeongAh/food-img/foodimg/{0}.jpg',
+      foodURL: 'https://cdn.jsdelivr.net/gh/LemonYellowParrot/4Fooooder/foodimg/{0}.jpg',//'https://cdn.jsdelivr.net/gh/LemonYellowParrot/4Fooooder/foodimg/{0}.jpg',
   
   
       // The default text to be shown when no data is present
