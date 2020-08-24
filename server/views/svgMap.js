@@ -2289,7 +2289,7 @@
   
       // my code
       foodType: 'image',
-      foodURL: 'https://cdn.jsdelivr.net/gh/LemonYellowParrot/4Fooooder/foodimg/{0}.jpg',//'https://cdn.jsdelivr.net/gh/LemonYellowParrot/4Fooooder/foodimg/{0}.jpg',
+      foodURL: 'https://cdn.jsdelivr.net/gh/juyonLee00/4Fooooder/foodimg/{0}.jpg',//'https://cdn.jsdelivr.net/gh/juyonLee00/4Fooooder/foodimg/{0}.jpg',
   
   
       // The default text to be shown when no data is present
