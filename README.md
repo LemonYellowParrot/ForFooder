@@ -5,9 +5,11 @@ svgmap 오픈소스와 위키피디아에서 수집한 데이터를 시각화하
 
 ## 설치
 노드 설치(v12.18.3)
+<br>
 https://nodejs.org/ko/ 에서 OS에 맞게 설치한다.
 
 npm 설치
+<br>
 npm은 node package Manager이어서 노드를 설치할 때 같이 설치되지만,
 설치가 필요한 경우에는 아래 커맨드를 사용한다. -v 옵션을 사용해 버전을 확인할 수 있다.
 ```
@@ -16,12 +18,14 @@ npm -v
 ```
 
 ejs 설치
+<br>
 html 파일을 렌더링하기 위해 ejs 모듈을 사용했다.(사용한 버전: 6.x.x)
 ```
 npm install ejs
 ```
 
 express 설치
+<br>
 node서버 생성을 위해 express 모듈을 사용했기 때문에 npm을 이용해 설치해준다. -v 옵션을 이용해 버전 확인가능하다.(사용한 버전: 6.x.x)
 ```
 npm install express
@@ -29,6 +33,7 @@ npm express -v
 ```
 
 mysql 설치
+<br>
 https://dev.mysql.com/downloads/mysql/ 에서 OS 버전에 맞게 다운받는다. -V 옵션을 이용해 설치 여부 및 버전 확인이 가능하다.(사용한 버전: 8.0.21) 
 ```
 mysql -V
