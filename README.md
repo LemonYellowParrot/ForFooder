@@ -85,3 +85,5 @@ CREATE TABLE `테이블명` (
 
 svgMap
 https://github.com/StephanWagner/svgMap
+wikipedia
+https://en.wikipedia.org/wiki/%ec%9c%84%ed%82%a4%eb%b0%b1%ea%b3%bc:%eb%8c%80%eb%ac%b8
